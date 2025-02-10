@@ -1,0 +1,143 @@
+/* Style global */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+/* Conteneur du formulaire */
+form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    box-sizing: border-box;
+}
+
+/* Titre principal */
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Section des épreuves */
+h2 {
+    font-size: 1.5rem;
+    margin: 15px 0 10px;
+    color: #2c3e50;
+}
+
+/* Labels */
+label {
+    display: block;
+    font-size: 1.1rem;
+    margin: 10px 0 5px;
+    color: #555;
+}
+
+/* Conteneur pour l'input et les boutons + / - */
+div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+/* Champs de saisie */
+input[type="number"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    width: 50%;
+    max-width: 120px;
+}
+
+/* Boutons + et - */
+button {
+    padding: 8px 15px;
+    font-size: 1rem;
+    border: none;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="button"]:hover {
+    background-color: #2980b9;
+}
+
+button[type="reset"] {
+    background-color: #e74c3c;
+}
+
+button[type="reset"]:hover {
+    background-color: #c0392b;
+}
+
+/* Bouton Reset */
+button[type="reset"] {
+    padding: 12px 20px;
+    margin-top: 20px;
+    width: 100%;
+    font-size: 1rem;
+}
+
+/* Bouton Calculer la moyenne */
+button[type="submit"] {
+    padding: 12px 20px;
+    background-color: #2ecc71;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    width: 100%;
+    margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+    background-color: #27ae60;
+}
+
+/* Marges et espacement entre les sections */
+h2 {
+    margin-top: 20px;
+}
+
+form input[type="number"]:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+/* Responsive - taille de l'écran plus petit */
+@media (max-width: 600px) {
+    body {
+        padding: 20px;
+    }
+
+    form {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+
+    input[type="number"] {
+        width: 100%;
+    }
+}
